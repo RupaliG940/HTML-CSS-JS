@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .root{
+            --primary-color:brown;
+            --custom-width:800px;
+            --custom-height:100px;
+        }
+ .container{
+            background-color: pink;
+            border: 4px solid black;
+            height: 600px; 
+             /* width : 800px; */
+             display: flex;
+             justify-content: center;
+             align-items: center;
+            width: var(--custom-width);
+        }
+        .box{
+            background-color: blue;
+            border: 4px solid black;
+            width: 100px;
+            /* height: 100px; */
+            height:var(--custom-height)
+
+        }
+
+
+    </style>
+       
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

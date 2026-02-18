@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box ;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #a7bfd2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card{
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+   
+}
+.card img{
+   width: 100%;
+    height: 30%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.textbox{
+
+    text-align: center;
+    width: 75%;
+    gap: 15px;
+}

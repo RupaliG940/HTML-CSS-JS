@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8th layout</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            height: 100vh;
+            width: 100vw;
+            
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: pink;
+            border: 5px soild black;
+            display: grid;
+            gap: 2rem;
+            padding: 2rem;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(3,1fr);
+
+        }
+        .item{
+            border: 5px solid rgb(13, 12, 12);
+            background-color: rgb(93, 5, 20);
+        }
+        .box8{
+            grid-column-start: 3;
+            grid-column-end: 6;
+        }
+        .box9{
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item box1"></div>
+            <div class="item box2"></div>
+            <div class="item box3"></div>
+            <div class="item box4"></div>
+            <div class="item box5"></div>
+            <div class="item box6"></div>
+            <div class="item box7"></div>
+            <div class="item box8"></div>
+            <div class="item box9"></div>
+            
+        </div>
+    </main>
+</body>
+</html>
