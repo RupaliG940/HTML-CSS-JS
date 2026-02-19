@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            display: grid;
+            /* grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr); */
+            padding: 2rem;
+            gap: 2rem;
+            grid-template-areas: 
+                "a b c"
+                "d e f"
+             ;
+        }
+        .item{
+            background-color: pink;
+            border: 2px solid white;
+           
+        }
+        #a{
+            grid-area:a ;
+        }
+        #b{
+            grid-area:b ;
+        }
+        #c{
+            grid-area:c ;
+        }
+        #d{
+            grid-area:d;
+        }
+        #e{
+            grid-area:e ;
+        }
+        #f{
+            grid-area:f ;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="a"></div>
+        <div class="item" id="b"></div>
+        <div class="item" id="c"></div>
+        <div class="item" id="d"></div>
+        <div class="item" id="e"></div>
+        <div class="item" id="f"></div>
+    </div>
+</body>
+</html>
